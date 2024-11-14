@@ -13,20 +13,17 @@
 html {
     font-size: 16px;
     width: 100%;
-    /* tamanho padrão */
 }
 
 @media (max-width: 1024px) {
     html {
         font-size: 13px;
-        /* diminui em telas menores */
     }
 }
 
 @media (max-width: 480px) {
     html {
         font-size: 12px;
-        /* diminui ainda mais em telas muito pequenas */
     }
 }
 
@@ -41,24 +38,24 @@ html {
 }
 
 body {
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     height: 100%;
     min-width: 100%;
-    font-weight: 700 !important;
+    font-weight: 700;
     overflow-x: hidden;
     letter-spacing: 0.02em;
-
-
-
 }
 
 a {
     color: #000000DE;
 }
-p{
+
+p {
     font-weight: 400;
 }
+
 .container-navbar {
     width: 100%;
     position: relative;
@@ -75,12 +72,13 @@ p{
     height: 6rem;
     padding: 0 2rem;
     justify-content: space-between;
-
     z-index: 6;
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
 }
+
 .logo {
     height: 50px;
 }
@@ -89,9 +87,7 @@ p{
     display: flex;
     align-items: center;
     height: 100%;
-    /* Define a altura total */
 }
-
 
 .nav-links {
     display: flex;
@@ -100,7 +96,6 @@ p{
     margin: 0 2em;
     gap: 1em;
     height: 100%;
-    /* Define a altura total */
     text-transform: uppercase !important;
     letter-spacing: 0.1em !important;
 }
@@ -109,7 +104,7 @@ p{
     display: flex;
     align-items: center;
     height: 100%;
-    /* Define a altura total */
+
 }
 
 .nav-links a {
@@ -125,7 +120,6 @@ p{
 
 .nav-links li {
     position: relative;
-    /* Permite que a barra verde seja posicionada no li */
 }
 
 .nav-links li>a.active::after {
@@ -137,7 +131,6 @@ p{
     height: 6px;
     background-color: var(--verde);
 }
-
 
 .actions {
     display: flex;
@@ -161,13 +154,10 @@ p{
 
 .join-now,
 .sign-in {
-
     border: 1px solid var(--preto);
-
 }
 
 .sign-in {
-
     color: var(--preto);
     margin: 0 1rem 0 0;
 }
@@ -207,12 +197,10 @@ p{
     font-weight: bold;
     text-transform: uppercase !important;
     letter-spacing: 0.1em !important;
-
 }
 
 .submenu h1 {
     font-size: 1rem;
-
 }
 
 .container-started {
@@ -220,7 +208,7 @@ p{
     height: 40rem;
     justify-content: center;
     display: flex;
-width: 100%;
+    width: 100%;
 }
 
 .content-started {
@@ -233,20 +221,16 @@ width: 100%;
     justify-content: flex-start;
     align-items: center;
 }
-.text-content h2{
+
+.text-content h2 {
     font-size: 36px;
     color: #000000DE;
 }
 
-.text-content p{
+.text-content p {
     font-size: 19px;
 }
 
-.join-now-btn{
-
-}
-
-/* Container para a estrela */
 .star-container {
     position: absolute;
     width: 70rem;
@@ -258,79 +242,75 @@ width: 100%;
     right: -30rem;
 }
 
-/* Cada camada da estrela */
 .star {
-    z-index: 0;
-
     position: absolute;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%,
-            79% 91%, 50% 70%, 21% 91%, 32% 57%,
-            2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
-/* Camadas de cores com bordas mais finas */
-.star1 {
+.star1,
+.star5,
+.star9 {
     background-color: var(--dourado-claro);
-    /* Dourado */
+}
+
+.star2,
+.star6 {
+    background-color: var(--verde-escuro);
+}
+
+.star3,
+.star7 {
+    background-color: var(--verde-claro);
+}
+
+.star4,
+.star8 {
+    background-color: var(--verde);
+}
+
+.star1 {
     width: 100%;
     height: 100%;
 }
 
 .star2 {
-    background-color: var(--verde-escuro);
-    /* Verde escuro */
     width: 90%;
     height: 90%;
 }
 
 .star3 {
-    background-color: var(--verde-claro);
-    /* Branco */
     width: 80%;
     height: 80%;
 }
 
 .star4 {
-    background-color: var(--verde);
-    /* Verde escuro */
     width: 70%;
     height: 70%;
 }
 
 .star5 {
-    background-color: var(--dourado-claro);
-    /* Dourado */
     width: 60%;
     height: 60%;
 }
 
 .star6 {
-    background-color: var(--verde-escuro);
-    /* Verde escuro */
     width: 50%;
     height: 50%;
 }
 
 .star7 {
-    background-color: var(--verde-claro);
-    /* Branco */
     width: 40%;
     height: 40%;
 }
 
 .star8 {
-    background-color: var(--verde);
-    /* Verde escuro */
     width: 30%;
     height: 30%;
 }
 
 .star9 {
-    background-color: var(--dourado-claro);
-    /* Dourado */
     width: 20%;
     height: 20%;
-
 }
 
 .getting-started {
@@ -347,8 +327,6 @@ width: 100%;
     margin: 0 auto;
     padding: 48px 0 0 0;
     height: 550px;
-
-
 }
 
 .getting-started h2 {
@@ -381,7 +359,6 @@ width: 100%;
     width: 45px;
     height: 45px;
     border: 1px solid var(--verde);
-    /* Verde escuro */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -406,8 +383,6 @@ width: 100%;
 .step-description a {
     color: #00754a;
 }
-
-
 
 .rewards-header {
     display: flex;
@@ -436,10 +411,12 @@ width: 100%;
     margin-top: 10px;
     border-bottom: 2px solid #e0e0e0;
 }
-.star-bar i{
+
+.star-bar i {
     color: rgb(203, 162, 88);
     font-size: 12px;
 }
+
 .star-bar span {
     font-size: 24px;
     color: #333;
@@ -448,7 +425,6 @@ width: 100%;
     position: relative;
 }
 
-/* Barra de progresso verde sob a estrela ativa */
 .star-bar span.active::after {
     content: "";
     position: absolute;
@@ -459,24 +435,19 @@ width: 100%;
     background-color: #006241;
 }
 
-
-
 .customize-section {
     background-color: var(--verde-claro);
-
     padding: 0 40px 40px 40px;
     max-width: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 20px;
     min-width: 100%;
-
 }
 
 .customize-section img {
-    width:25rem;
+    width: 25rem;
     height: auto;
 }
 
@@ -489,9 +460,8 @@ width: 100%;
 .customize-text h3 {
     font-size: 24px;
     color: #333 !important;
-   padding: 0;
-   margin: 1rem 0;
-   
+    padding: 0;
+    margin: 1rem 0;
 }
 
 .customize-text p {
@@ -502,7 +472,6 @@ width: 100%;
 }
 
 .container-endless {
-
     display: flex;
     min-width: 100%;
     flex-direction: column;
@@ -512,8 +481,6 @@ width: 100%;
     padding: 6rem 0;
     background-color: white;
 }
-
-
 
 .features {
     display: flex;
@@ -551,7 +518,7 @@ width: 100%;
 
 .feature a {
     color: #00704a;
-      font-weight: bold;
+    font-weight: bold;
 }
 
 .feature a:hover {
@@ -575,10 +542,8 @@ width: 100%;
 }
 
 .pay-container hr {
-    border-top:1px solid #ccc;
-    /* Linha sólida com 2px de espessura e cor cinza */
+    border-top: 1px solid #ccc;
     width: 80rem;
-    /* Largura de 80% do contêiner */
     margin: 20px 0 40px 0;
 }
 
@@ -599,16 +564,12 @@ width: 100%;
     flex-direction: row;
     justify-content: center;
     max-width: 1440px;
-
 }
-
-
 
 .option,
 .option-lider {
     display: flex;
     align-items: start;
-
     text-align: left;
 }
 
@@ -654,22 +615,15 @@ width: 100%;
     justify-content: center;
     background-image: url("assets/background.png");
     background-size: cover;
-    /* A imagem cobre toda a área */
     background-position: center;
-    /* Centraliza a imagem */
     background-repeat: no-repeat;
-    /* Evita repetição da imagem */
-
     width: 100%;
-
-
 }
 
 .rewards-section h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
-
 
 .rewards-box {
     display: flex;
@@ -683,6 +637,7 @@ width: 100%;
     width: 100%;
     font-weight: 400;
 }
+
 .rewards-box p {
     color: #000000DE;
     font-size: 1rem;
@@ -708,7 +663,6 @@ width: 100%;
 }
 
 .reward-item img {
-
     width: 12rem;
     margin-bottom: 10px;
 }
@@ -735,9 +689,7 @@ width: 100%;
     background-color: #005638;
 }
 
-/* Seção de Perguntas */
 .faq-section {
-
     text-align: start;
     padding: 4.5rem;
 }
@@ -757,7 +709,6 @@ width: 100%;
     color: #00704a;
 }
 
-/* Seção de Informações Adicionais */
 .info-section {
     background-color: rgb(249, 249, 249);
     display: flex;
@@ -765,80 +716,91 @@ width: 100%;
     width: 100%;
     margin: 0 auto;
 }
-.info-container{
+
+.info-container {
     width: 87rem;
     padding: 3rem;
 }
-.info-container h2{
+
+.info-container h2 {
     text-transform: uppercase;
     color: #00000094;
 }
-.info-container p{
+
+.info-container p {
     font-weight: 400;
 }
+
 .note {
     font-size: 0.8em;
     color: #000000DE;
     margin-bottom: 20px;
 }
+
 .note a {
     color: #00704a;
 }
+
 h2 {
     font-size: 1.2em;
     margin-top: 20px;
     color: #00704a;
 }
+
 .section {
     margin-bottom: 20px;
 }
+
 .columns {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .column {
     flex: 1;
     min-width: 280px;
 }
+
 .column h2 {
     margin-top: 0;
 }
 
 
-hr{
+hr {
     border: 1.5px solid var(--cinza);
     width: 100%;
-    margin: 2.5rem 0 ;
+    margin: 2.5rem 0;
 }
-/* Rodapé */
+
 .footer {
- display: flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     padding: 0 2rem 2rem 2rem;
-    
 }
-.footer hr{
-    width: 100%; border: 1px solid var(--cinza);
 
-   
+.footer hr {
+    width: 100%;
+    border: 1px solid var(--cinza);
 }
-.aboutus{
+
+.aboutus {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-/* Estilo para cada coluna */
+
 .footer-column {
-    width: 18%;font-weight: 400;
+    width: 18%;
+    font-weight: 400;
 }
 
-.footer-column h2 {font-weight: 400;
+.footer-column h2 {
+    font-weight: 400;
     font-size: 19px;
     color: #333;
- margin: 2rem 0;
+    margin: 2rem 0;
 }
 
 .footer-column ul {
@@ -848,10 +810,9 @@ hr{
 }
 
 .footer-column li {
-  margin: 0 0 0.5rem 0;
-padding: 0.5rem 0;
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem 0;
 }
-
 
 .footer-column ul li a {
     color: #666;
@@ -861,40 +822,40 @@ padding: 0.5rem 0;
 .footer-column ul li a:hover {
     text-decoration: underline;
     color: #000;
-}.footer-bottom {
-    
+}
+
+.footer-bottom {
     margin-top: 20px;
     text-align: start;
-
 }
-.social-media{
+
+.social-media {
     display: flex;
     margin: 0 0 1.5rem 0;
-    
 }
+
 .social-media a {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 32px;
     width: 32px;
-margin: 0 0.6rem;
-text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.87); /* Fundo preto */
-    border-radius: 50%; /* Tornar o fundo um círculo */
-    transition: box-shadow 0.6s ease; /* Transição suave para a sombra */
+    margin: 0 0.6rem;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 50%;
+    transition: box-shadow 0.6s ease;
 }
 
 .social-media i {
-    color: white; /* Cor branca para os ícones */
-    font-size: 24px; /* Tamanho do ícone */
+    color: white;
+    font-size: 24px;
     display: block;
 }
 
 .social-media a:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Aumenta a sombra ao passar o mouse */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-
 
 .footer-links {
     list-style: none;
